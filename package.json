@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -r dotenv/config ./bin/www",
+    "dev": "nodemon -r dotenv/config ./bin/www",
+    "tw": "npx @tailwindcss/cli -i ./public/stylesheets/input.css -o ./public/stylesheets/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.6",
+    "cookie-parser": "~1.4.7",
+    "debug": "~4.4.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "hbs": "^4.2.0",
+    "http-errors": "~2.0.0",
+    "morgan": "~1.10.0",
+    "tailwindcss": "^4.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
